@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Deserializer {
 
-    public static ArrayList<File> initializeFiles(String[] inputFilesArray) {
+    private static ArrayList<File> initializeFiles(String[] inputFilesArray) {
         ArrayList<File> fileArrayList = new ArrayList<>();
         for (String filename : inputFilesArray) {
             File file = new File(filename);
