@@ -12,11 +12,11 @@ public class ArgumentsParser {
             .append("Something is wrong with the parameters. ")
             .append("Usage: ")
             .append("java -jar <jarfile> ")
-            .append("[-a or -d] <-s or -argument> <outputFileName> <inputFiles...> \n")
+            .append("[-a or -d] <-s or -i> <outputFileName> <inputFiles...> \n")
             .append("\t -a for ascending mergesort (optional)\n")
             .append("\t -d for descending mergesort (optional)\n")
             .append("\t -s for string data format\n")
-            .append("\t -argument for integer data format\n");
+            .append("\t -i for integer data format\n");
 
     private static final IllegalArgumentException illegalArgumentException
             = new IllegalArgumentException(ILLEGAL_ARG_EXCEPTION.toString());
