@@ -31,7 +31,7 @@ public class Parameters {
         return outputFilename;
     }
 
-    public ArrayList<BufferedReader> getInputFilenames() {
+    public ArrayList<BufferedReader> getBufferedReaders() {
         return bufferedReaders;
     }
 }
