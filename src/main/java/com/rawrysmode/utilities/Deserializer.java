@@ -23,8 +23,8 @@ public class Deserializer {
         ArrayList<File> fileArrayList = initializeFiles(inputFilesArray);
         ArrayList<BufferedReader> bufferedReaders = new ArrayList<>();
         for (File file : fileArrayList) {
-            try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))){
-                bufferedReaders.add(bufferedReader);
+            try {
+                bufferedReaders.add(new BufferedReader(new FileReader(file)));
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
